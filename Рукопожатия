@@ -1,0 +1,13 @@
+const getHandshakeCount = (peopleCount: number) => {
+  if (peopleCount < 2) return 0
+
+  let counter = 0
+  for (let i = 2; i <= peopleCount; i++) {
+    counter += i - 1
+  }
+  return counter
+}
+
+console.log(getHandshakeCount(10))
+
+Ответ: 45 
