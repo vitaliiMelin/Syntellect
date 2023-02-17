@@ -1,4 +1,4 @@
-const getDayCounter = (fullDistance: number) => {
+const getDayCount = (fullDistance: number) => {
   let days = 0
   do {
     fullDistance -= 50
@@ -9,6 +9,6 @@ const getDayCounter = (fullDistance: number) => {
   return days
 }
 
-console.log(getDayCounter(100))
+console.log(getDayCount(100))
 
 Ответ: 4
