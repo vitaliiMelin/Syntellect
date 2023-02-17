@@ -1,0 +1,8 @@
+const string = 'кошка,кошка,собака,собака,лошадь,корова,кот'
+
+const removeDublicateFromString = (text: string) => {
+  return [...new Set(text.split(','))].join(',')
+}
+
+console.log(string)
+console.log(removeDublicateFromString(string))
