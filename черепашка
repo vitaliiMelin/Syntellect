@@ -1,0 +1,14 @@
+const dayCounter = (fullDistance: number) => {
+  let days = 0
+  do {
+    fullDistance -= 50
+    days++
+    if (fullDistance <= 0) break
+    fullDistance += 30
+  } while (fullDistance > 0)
+  return days
+}
+
+console.log(dayCounter(100))
+
+Ответ: 4
